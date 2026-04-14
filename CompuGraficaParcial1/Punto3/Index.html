@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>">
+    <title>The Money App</title>
+</head>
+<body>
+        <aside>
+            <div id="Aside-Header">
+                <span>💰</span> Money Maker
+            </div>
+            <div id="Aside-Body">
+                <div class="Aside-Option Activo">
+                    <a href="#Tarjetas">🏠 Inicio</a>
+                </div>
+                <div class="Aside-Option">
+                    <a href="#ingresos">📈 Ingresos</a>
+                </div>
+                <div class="Aside-Option">
+                    <a href="#Gastos">📉 Gastos</a>
+                </div>
+                <div class="Aside-Option">
+                    <a href="#Dates">📊 Reportes</a>
+                </div>
+            </div>
+            <div id="Account-Info">
+                <div class="Account Foto">AD</div>
+                <div class="Account Nombre">Admin</div>
+                <a class="Back-To-Login" href="Login.html">⬅</a>
+            </div>
+        </aside>
+
+        <main id="Information-Section">
+            <div id="Information-Header">
+                <h1>Panel De Control</h1>
+                <p>Resumen Financiero del mes</p>
+                <hr>
+                <p class="Titulo">RESUMEN DEL MES</p>
+            </div>
+
+            <div id="Information-Body">
+                <div class="Cards" id="Tarjetas">
+                    <div class="Saldo-Total Carta">
+                        <h2>Saldo Total</h2>
+                        <p class="Monto Verde">$5000</p>
+                        <span class="Verde">⬆️ 12%</span>
+                        <span>VS mes anterior</span>
+                    </div>
+                    <div class="Ingresos Carta">
+                        <h2>Ingresos</h2>
+                        <p class="Monto Azul">$3500</p>
+                        <span class="Verde">⬆️ 8%</span>
+                        <span>VS mes anterior</span>
+                    </div>
+                    <div class="Gastos Carta">
+                        <h2>Gastos</h2>
+                        <p class="Monto Rojo">$1050</p>
+                        <span class="Rojo">⬆️ 5%</span>
+                        <span>VS mes anterior</span>
+                    </div>
+                </div>
+                <div id="ingresos">
+                    <h1>Ingresos</h1>
+                    <div class="Cards">
+                        <div class="Carta">
+                            <h2>Ingreso Total</h2>
+                            <p class="Monto Verde">$3500</p>
+                            <span class="Verde">⬆️ 10%</span>
+                            <span>VS mes anterior</span>
+                        </div>
+                        <div class="Carta">
+                            <h2>Salario</h2>
+                            <p class="Monto Verde">$3000</p>
+                            <span class="Verde">⬆️ 5%</span>
+                            <span>VS mes anterior</span>
+                        </div>
+                        <div class="Carta">
+                            <h2>Freelance</h2>
+                            <p class="Monto Azul">$500</p>
+                            <span class="Verde">⬆️ 20%</span>
+                            <span>VS mes anterior</span>
+                        </div>
+                    </div>
+                    <div id="Tabla-Ingresos">
+                        <h1>Registro de Ingresos</h1>
+                        <table>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Descripción</th>
+                                <th>Categoría</th>
+                                <th>Monto</th>
+                            </tr>
+                            <tr>
+                                <td>2024-06-01</td>
+                                <td>Salario</td>
+                                <td>Empleo</td>
+                                <td class="Verde">+$3000</td>
+                            </tr>
+                            <tr>
+                                <td>2024-06-15</td>
+                                <td>Freelance diseño</td>
+                                <td>Independiente</td>
+                                <td class="Verde">+$500</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="Gastos">
+                    <h1>Gastos</h1>
+                    <div class="Cards">
+                        <div class="Carta">
+                            <h2>Gasto Total</h2>
+                            <p class="Monto Rojo">$1050</p>
+                            <span class="Rojo">⬆️ 5%</span>
+                            <span>VS mes anterior</span>
+                        </div>
+                        <div class="Carta">
+                            <h2>Vivienda</h2>
+                            <p class="Monto Rojo">$800</p>
+                            <span class="Verde">⬇️ 2%</span>
+                            <span>VS mes anterior</span>
+                        </div>
+                        <div class="Carta">
+                            <h2>Alimentación</h2>
+                            <p class="Monto Rojo">$250</p>
+                            <span class="Rojo">⬆️ 8%</span>
+                            <span>VS mes anterior</span>
+                        </div>
+                    </div>
+                    <div id="Detalle-Gastos">
+                        <div id="Tabla-Gastos">
+                            <h1>Registro de Gastos</h1>
+                            <table>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Descripción</th>
+                                    <th>Categoría</th>
+                                    <th>Monto</th>
+                                </tr>
+                                <tr>
+                                    <td>2024-06-05</td>
+                                    <td>Supermercado</td>
+                                    <td>Alimentación</td>
+                                    <td class="Rojo">-$150</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-06-10</td>
+                                    <td>Renta</td>
+                                    <td>Vivienda</td>
+                                    <td class="Rojo">-$800</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-06-20</td>
+                                    <td>Restaurante</td>
+                                    <td>Alimentación</td>
+                                    <td class="Rojo">-$100</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div id="Gastos-Por-Categoria">
+                            <h1>Gastos por Categoría</h1>
+                            <div class="Gasto">
+                                <div class="Gasto-Info">
+                                    <div class="Circulo" style="background-color: red;"></div>
+                                    Vivienda
+                                </div>
+                                <div class="Porcentaje">
+                                    40%
+                                    <div class="Barra-Fondo" style="width: 40%; background-color: red;"></div>
+                                </div>
+                            </div>
+                            <div class="Gasto">
+                                <div class="Gasto-Info">
+                                    <div class="Circulo" style="background-color: orange;"></div>
+                                    Alimentación
+                                </div>
+                                <div class="Porcentaje">
+                                    30%
+                                    <div class="Barra-Fondo" style="width: 30%; background-color: orange;"></div>
+                                </div>
+                            </div>
+                            <div class="Gasto">
+                                <div class="Gasto-Info">
+                                    <div class="Circulo" style="background-color: yellow;"></div>
+                                    Transporte
+                                </div>
+                                <div class="Porcentaje">
+                                    20%
+                                    <div class="Barra-Fondo" style="width: 20%; background-color: yellow;"></div>
+                                </div>
+                            </div>
+                            <div class="Gasto">
+                                <div class="Gasto-Info">
+                                    <div class="Circulo" style="background-color: green;"></div>
+                                    Entretenimiento
+                                </div>
+                                <div class="Porcentaje">
+                                    10%
+                                    <div class="Barra-Fondo" style="width: 10%; background-color: green;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Dates">
+                        <h1>Reporte Mensual</h1>
+                        <p>Comparativa de Ingresos vs Gastos por mes</p>
+                        <table id="Tabla-Reporte">
+                            <tr>
+                                <th>Mes</th>
+                                <th>Ingresos</th>
+                                <th>Gastos</th>
+                                <th>Balance</th>
+                                <th>Estado</th>
+                            </tr>
+                            <tr>
+                                <td>Enero</td>
+                                <td class="Verde">$3000</td>
+                                <td class="Rojo">$1200</td>
+                                <td class="Verde">$1800</td>
+                                <td class="Verde">✅ Positivo</td>
+                            </tr>
+                            <tr>
+                                <td>Febrero</td>
+                                <td class="Verde">$3000</td>
+                                <td class="Rojo">$2800</td>
+                                <td class="Verde">$200</td>
+                                <td class="Verde">✅ Positivo</td>
+                            </tr>
+                            <tr>
+                                <td>Marzo</td>
+                                <td class="Verde">$3000</td>
+                                <td class="Rojo">$3200</td>
+                                <td class="Rojo">-$200</td>
+                                <td class="Rojo">❌ Negativo</td>
+                            </tr>
+                            <tr>
+                                <td>Abril</td>
+                                <td class="Verde">$3500</td>
+                                <td class="Rojo">$1500</td>
+                                <td class="Verde">$2000</td>
+                                <td class="Verde">✅ Positivo</td>
+                            </tr>
+                            <tr>
+                                <td>Mayo</td>
+                                <td class="Verde">$3500</td>
+                                <td class="Rojo">$3400</td>
+                                <td class="Verde">$100</td>
+                                <td class="Verde">✅ Positivo</td>
+                            </tr>
+                            <tr>
+                                <td>Junio</td>
+                                <td class="Verde">$3500</td>
+                                <td class="Rojo">$1050</td>
+                                <td class="Verde">$2450</td>
+                                <td class="Verde">✅ Positivo</td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+        </main>
+</body>
+</html>

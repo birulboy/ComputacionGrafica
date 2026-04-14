@@ -1,0 +1,171 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+    color:#222;
+}
+
+.header-bbc{
+    background:#bb1919;
+    padding:15px 150px;
+    display:flex;
+    
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-cuadro{
+    background:white;
+    color:#bb1919;
+    font-weight:bold;
+    font-size:35px;
+    padding:4px 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texto-header{
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+    margin-left:10px;
+    letter-spacing:1px;
+}
+
+header h1{
+    margin:0;
+    font-size:40px;
+    color:white;
+    letter-spacing:2px;
+}
+
+nav{
+    background: white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    margin:0;
+    padding:0 120PX;
+}
+
+nav li{
+    margin:0 15px;
+}
+
+nav a{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+    padding:15px;
+    display:block;
+    font-weight:bold;
+    transition:0.2s;
+}
+
+nav a:hover{
+    border-bottom:3px solid #bb1919;
+}
+
+.contenedor-principal{
+    display:flex;
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    gap:20px;
+}
+
+main{
+    flex:3;
+}
+
+article{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:4px;
+    border-left:6px solid #bb1919;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+article h2{
+    color:#bb1919;
+}
+
+.contenedor-secundario{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.contenedor-interno{
+    flex:1;
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    border-top:4px solid #bb1919;
+    transition:0.2s;
+    display:flex;
+    flex-direction:column;
+}
+
+.contenedor-interno img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+    border-radius:6px;
+    margin-top:10px;
+}
+
+.contenedor-interno:hover{
+    transform:translateY(-3px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.contenedor-interno h1{
+    font-size:18px;
+    color:#bb1919;
+}
+
+aside{
+    flex:1;
+    background:white;
+    padding:20px;
+    border-radius:4px;
+    height:fit-content;
+    border-left:5px solid #bb1919;
+}
+
+aside h3{
+    color:#bb1919;
+}
+
+aside ul{
+    list-style:none;
+    padding:0;
+}
+
+aside li{
+    margin-bottom:10px;
+}
+
+aside a{
+    text-decoration:none;
+    color:#222;
+}
+
+aside a:hover{
+    color:#bb1919;
+}
+
+footer{
+    background:#000000;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+    border-top:4px solid #bb1919;
+}

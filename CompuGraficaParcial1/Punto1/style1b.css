@@ -1,0 +1,181 @@
+body{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100vw;
+    justify-self: center;
+    box-sizing: border-box;
+    padding: 5%;
+}
+
+header{
+    width: 70%;
+    height: 15%;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 2%;
+}
+
+header .Rectangulo {
+    background-color: rgb(255, 255, 255);
+    height: 40%;
+}
+
+header .Largo {
+    width: 22%;
+    
+}
+header .Corto {
+    width: 13%;
+    
+}
+main {
+    height: 80%;
+    width: 70%;
+    display: flex;
+}
+
+#Section1 {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 4.5%;
+    gap: 3%;
+    row-gap:1.5%;
+}
+
+#Section2 {
+    width: 34%;
+    height: 100%;
+    background-color: black;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.Cuadrado {
+    width: 47.1%;
+    height: 45%;
+    background-color: rgb(229, 229, 229);
+    border-radius: 5px;
+}
+
+.Grafico1{
+    width: 100%;
+    height: 25%;
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Parrafo {
+    width: 40%;
+    height: 80%;
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: end;
+}
+
+.Circulo {
+    height: 80%;
+    aspect-ratio: 1/1;
+    background-color: rgb(222, 187, 69);
+    border-radius: 100%;
+}
+
+.TextoGrande{
+    height: 20%;
+}
+
+.Uno{
+    background-color: rgb(225, 114, 116);
+    width:90%
+}
+
+.Dos{
+    background-color: rgb(127, 67, 71);
+    width: 75%;
+}
+
+.Tres{
+    background-color: rgb(84, 55, 53);
+    width: 63%;
+}
+
+
+.Grafico2 {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6%;
+    padding-top: 7%;
+
+}
+
+.Texto {
+    height: 3%;
+}
+
+.Cuatro{
+    background-color: rgb(184, 105, 110);
+    width: 80%;
+}
+
+.Cinco{
+    background-color: rgb(56, 53, 84);
+    width: 50%;
+}
+
+.Seis{
+    background-color: rgb(184, 105, 110);
+    width: 52%;
+}
+
+.Siete{
+    background-color: rgb(184, 105, 110);
+    width: 78%;
+}
+
+.Ocho{
+    background-color: rgb(86, 197, 143);
+    width: 25%;
+}
+
+.Nueve{
+    background-color: rgb(184, 105, 110);
+    width: 49%;
+}
+
+.Diez{
+    background-color: rgb(184, 105, 110);
+    width: 75%;
+}
+
+.Once{
+    background-color: rgb(184, 105, 110);
+    width: 8%;
+}
+
+.Doce{
+    background-color: rgb(184, 105, 110);
+    width: 55%;
+}
+
+.Trece{
+    background-color: rgb(184, 105, 110);
+    width: 67%;
+}
+
+.Catorce{
+    background-color: rgb(184, 105, 110);
+    width: 35%;
+}

@@ -1,0 +1,266 @@
+body {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    box-sizing: border-box;
+}
+
+aside {
+    background-color: rgba(46, 100, 59, 0.686);
+    padding-left: 0;
+    padding-right: 0;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top : 0;
+    height: 100vh;
+}
+
+#Aside-Header {
+    font-family: fantasy;
+    font-size: 1.2rem;
+    color: #000000;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    border: #00000083 solid 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#Aside-Body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.Aside-Option a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
+
+.Aside-Option {
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.Aside-Option:hover {
+    background-color: rgba(46, 100, 59, 0.342);
+
+}
+
+
+#Account-Info {
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    font-weight: bolder;
+    margin-top: auto;
+}
+
+.Foto{
+    width: 20px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-color: rgba(46, 100, 59, 0.342);
+    padding: 10px;
+    border: #00000083 solid 1px;
+    font-weight: bolder;
+}
+
+.Nombre {
+    margin-top: 10px;
+}
+
+.Back-To-Login {
+    margin-top: 8px;
+    font-size: 1rem;
+    margin-left: 60px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+main {
+    background-color:rgb(241, 245, 248);
+    padding: 20px;
+    grid-column: 2/3;
+}
+
+.Cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
+    gap: 25px;
+    border: #000000d0 solid 1px;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+}
+
+.Carta {
+    border: #7070704f solid 2px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 0px;
+    transition: box-shadow 0.3s;
+}
+
+.Saldo-Total:hover{
+    box-shadow: 0 5px 10px 0 #008000;
+}
+
+.Ingresos:hover{
+    box-shadow: 0 5px 10px 0 #0000ff;
+}
+
+.Gastos:hover{
+    box-shadow: 0 5px 10px 0 #ff0000;
+}
+
+.Carta h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+}
+
+.Carta .Monto {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.Azul {
+    color: #0000ff;
+}
+
+.Rojo {
+    color: #ff0000;
+}
+.Verde {
+    color: #008000;
+}
+#Information-Section {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-top: 0;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-top: 1.35%;
+}
+
+#Information-Header p {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom:0;
+}
+
+#Information-Body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#Detalle-Gastos {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap:20px;
+
+}
+
+#Gastos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+table{
+    border: solid #7070704f 2px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#Gastos-Por-Categoria{
+    border: solid #7070704f 2px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Gasto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Gasto-Info{
+    display: flex;
+}
+
+.Porcentaje{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    width: 50%;
+}
+
+.Barra-Fondo{
+   margin-left: auto;
+   border-radius: 5px;
+}
+
+
+th {
+  background-color: #2c3e50;
+  color: white;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+
+td {
+  padding: 10px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Circulo {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}

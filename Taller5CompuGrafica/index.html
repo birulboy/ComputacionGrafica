@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 5 - Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ======================== PUNTO 1 ======================== -->
+    <h2>Punto 1 - Tres Círculos</h2>
+    <canvas id="Lienzo" width="500" height="500"></canvas>
+
+    <!-- ======================== PUNTO 2 ======================== -->
+    <h2>Punto 2 - Caja 3D</h2>
+    <canvas id="Lienzo2" width="600" height="300"></canvas>
+
+    <!-- ======================== PUNTO 3 ======================== -->
+    <h2>Punto 3 - Figuras Geométricas</h2>
+    <canvas id="Lienzo3" width="500" height="500"></canvas>
+
+    <!-- ======================== PUNTO 4 ======================== -->
+    <h2>Punto 4 - Más Métodos de Canvas</h2>
+    <canvas id="Lienzo4" width="500" height="500"></canvas>
+
+    <script>
+
+        // punto 1
+        const canvas = document.getElementById('Lienzo');
+        const ctx = canvas.getContext('2d');
+        const tamaño = canvas.width;
+        ctx.beginPath();
+        ctx.arc(tamaño*0.3, tamaño*0.3, tamaño * 0.3 , 0 , Math.PI * 2 );
+        ctx.strokeStyle='green';
+        ctx.stroke();
+        
+
+        ctx.beginPath();
+        ctx.arc(tamaño*0.7, tamaño*0.3, tamaño * 0.3 , 0 , Math.PI * 2 );
+        ctx.strokeStyle='purple';
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(tamaño*0.5, tamaño*0.7, tamaño * 0.3 , 0 , Math.PI * 2 );
+        ctx.strokeStyle='darkred';
+        ctx.stroke();
+
+
+        // punto 2
+        const canvas2 = document.getElementById('Lienzo2');
+        const ctx2 = canvas2.getContext('2d');
+
+        const width = Math.floor(canvas2.width) - 1;
+        const height = Math.floor(canvas2.height) - 1;
+        
+        function DrawLine(x1, y1, x2, y2, color, lienzo){
+            lienzo.beginPath();
+            lienzo.lineWidth = 1;
+            lienzo.strokeStyle = color;
+        
+            lienzo.moveTo(Math.floor(x1), Math.floor(y1))
+            lienzo.lineTo(Math.floor(x2), Math.floor(y2))
+        
+            lienzo.stroke();
+            lienzo.closePath();
+        }
+        
+        function randomColor() {
+            let r = Math.floor(Math.random() * 256);
+            let g = Math.floor(Math.random() * 256);
+            let b = Math.floor(Math.random() * 256);
+            return "rgb(" + r + ", " + g + ", " + b + ")"
+        }
+        
+        DrawLine(0, height, width, height, "red", ctx2)
+        
+        DrawLine(0, height * 1/4, 0, height * 3/4, randomColor(), ctx2)
+        DrawLine(width / 2, height / 2, width / 2, height, randomColor(), ctx2)
+        DrawLine(width, height * 1/4, width, height * 3/4, randomColor(), ctx2)
+        
+        DrawLine(0, height * 3/4, width / 2, height, randomColor(), ctx2)
+        DrawLine(width / 2, height, width, height * 3/4, randomColor(), ctx2)
+        
+        DrawLine(0, height * 1/4, width / 2, height / 2, randomColor(), ctx2)
+        DrawLine(width / 2, height / 2, width, height * 1/4, randomColor(), ctx2)
+        
+        DrawLine(0, height * 1/4, width / 2, 0, randomColor(), ctx2)
+        DrawLine(width / 2, 0, width, height * 1/4, randomColor(), ctx2)
+        
+        DrawLine(75, height * 1/4, width / 2, 75 *1/4, randomColor(), ctx2)
+        DrawLine(width / 2, 75 * 1/4, width - 75, height * 1/4, randomColor(), ctx2)
+        DrawLine(width - 75, height * 1/4, width / 2, height / 2 - 75 * 1/4, randomColor(), ctx2)
+        DrawLine(width / 2, height / 2 - 75 * 1/4, 75, height * 1/4, randomColor(), ctx2)
+        
+        DrawLine(width / 2, 75 * 1/4, width / 2, height / 2 - 75 * 1/4, randomColor(), ctx2)
+
+
+        // punto 3
+        const canvas3 = document.getElementById('Lienzo3');
+        const ctx3 = canvas3.getContext('2d');
+
+        ctx3.font = '14px Arial';
+        ctx3.fillStyle = 'black';
+        // triangulo
+        ctx3.beginPath();
+        ctx3.moveTo(125, 50);
+        ctx3.lineTo(30, 210);
+        ctx3.lineTo(220, 210);
+        ctx3.closePath();
+        ctx3.strokeStyle = 'blue';
+        ctx3.stroke();
+        ctx3.fillText('Triángulo', 88, 235);
+        // rectangulo
+        ctx3.beginPath();
+        ctx3.rect(285, 80, 180, 130);
+        ctx3.strokeStyle = 'green';
+        ctx3.stroke();
+        ctx3.fillStyle = 'black';
+        ctx3.fillText('Rectángulo', 340, 235);
+        // trapecio
+        ctx3.beginPath();
+        ctx3.moveTo(65, 290);
+        ctx3.lineTo(190, 290);
+        ctx3.lineTo(225, 440);
+        ctx3.lineTo(30, 440);
+        ctx3.closePath();
+        ctx3.strokeStyle = 'darkred';
+        ctx3.stroke();
+        ctx3.fillStyle = 'black';
+        ctx3.fillText('Trapecio', 90, 465);
+
+        // hexagono
+        ctx3.beginPath();
+        ctx3.moveTo(375, 285);
+        ctx3.lineTo(455, 325);
+        ctx3.lineTo(455, 405);
+        ctx3.lineTo(375, 445);
+        ctx3.lineTo(295, 405);
+        ctx3.lineTo(295, 325);
+        ctx3.closePath();
+        ctx3.strokeStyle = 'purple';
+        ctx3.stroke();
+        ctx3.fillStyle = 'black';
+        ctx3.fillText('Hexágono', 342, 465);
+
+
+
+        // punto 4
+        const canvas4 = document.getElementById('Lienzo4');
+        const ctx4 = canvas4.getContext('2d');
+
+        ctx4.font = '13px Arial';
+        ctx4.fillStyle = 'black';
+
+        // rectangulo relleno de color
+        ctx4.fillStyle = 'lightblue';
+        ctx4.fillRect(30, 30, 180, 80); // x, y, ancho, alto
+        ctx4.fillStyle = 'black';
+        ctx4.fillText('fillRect()', 100, 125);
+
+        // borra una parte de lo que ya se dibujo
+        ctx4.fillStyle = 'orange';
+        ctx4.fillRect(290, 30, 180, 80);
+        ctx4.clearRect(330, 45, 100, 50); // borra ese trozo del rectangulo naranja
+        ctx4.fillStyle = 'black';
+        ctx4.fillText('clearRect()', 350, 125);
+
+        // linea punteada, el array define el patrón de trazos y espacios:
+        ctx4.beginPath();
+        ctx4.setLineDash([12, 6]);// aquí 12px de línea y 6px de espacio entre tramos
+        ctx4.moveTo(30, 185);
+        ctx4.lineTo(210, 185);
+        ctx4.strokeStyle = 'purple';
+        ctx4.lineWidth = 2;
+        ctx4.stroke();
+        ctx4.setLineDash([]); // se resetea para que las siguientes lineas no sean punteadas
+        ctx4.lineWidth = 1;
+        ctx4.fillStyle = 'black';
+        ctx4.fillText('setLineDash()', 65, 210);
+
+        // circulo con relleno, fill() pinta por dentro
+        ctx4.beginPath();
+        ctx4.arc(380, 185, 45, 0, Math.PI * 2);
+        ctx4.fillStyle = 'lightgreen';
+        ctx4.fill();
+        ctx4.strokeStyle = 'darkgreen';
+        ctx4.stroke();
+        ctx4.fillStyle = 'black';
+        ctx4.fillText('arc + fill()', 348, 243);
+
+        // degradado de colores de izquierda a derecha
+        const degradado = ctx4.createLinearGradient(30, 280, 210, 280);
+        degradado.addColorStop(0, 'red'); // color al inicio
+        degradado.addColorStop(0.5, 'yellow'); // color en el medio
+        degradado.addColorStop(1, 'blue'); // color al final
+        ctx4.fillStyle = degradado;
+        ctx4.fillRect(30, 280, 180, 70);
+        ctx4.fillStyle = 'black';
+        ctx4.fillText('createLinearGradient()', 28, 368);
+
+        // sombra, hay que resetearla despues para que no afecte lo demas
+        ctx4.shadowColor = 'rgba(0, 0, 0, 0.5)';
+        ctx4.shadowBlur = 15; // que tan difusa es la sombra
+        ctx4.shadowOffsetX = 6; // cuanto se desplaza hacia la derecha
+        ctx4.shadowOffsetY = 6; // cuanto se desplaza hacia abajo
+        ctx4.fillStyle = 'tomato';
+        ctx4.fillRect(290, 280, 180, 70);
+        ctx4.shadowBlur = 0;
+        ctx4.shadowOffsetX = 0;
+        ctx4.shadowOffsetY = 0;
+        ctx4.fillStyle = 'black';
+        ctx4.fillText('shadowBlur()', 345, 368);
+
+        // rotar una figura, save y restore evitan que la rotacion afecte lo demas
+        ctx4.save();
+        ctx4.translate(120, 440); // mueve el origen al centro de donde va el rectangulo
+        ctx4.rotate(Math.PI / 6); // rota 30 grados
+        ctx4.fillStyle = 'coral';
+        ctx4.fillRect(-50, -25, 100, 50);
+        ctx4.restore(); // vuelve todo a como estaba antes del save
+        ctx4.fillStyle = 'black';
+        ctx4.fillText('rotate()', 92, 490);
+
+        // texto con solo borde, sin relleno por dentro
+        ctx4.strokeStyle = 'darkblue';
+        ctx4.lineWidth = 1;
+        ctx4.font = 'bold 20px Arial';
+        ctx4.strokeText('Hola!', 310, 445);
+        ctx4.font = '13px Arial';
+        ctx4.fillStyle = 'black';
+        ctx4.fillText('strokeText()', 305, 490);
+
+    </script>
+
+</body>
+</html>

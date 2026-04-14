@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+   background-color: #efe7d8;
+    display: grid;
+    grid-template-columns: 25% 1fr 1fr;
+    grid-template-rows: 1fr 25% 25% 25%;
+    height: 100vh;
+    width: 100vh;   
+    padding: 5%;
+    gap:5%;
+    box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total del contenedor */
+}
+
+
+#long-bar{
+    grid-column : 1 / 4 ;
+    grid-row: 1 / 2;
+    background-color: rgb(7, 59, 99);
+    border-radius:5px;
+}
+
+
+
+
+#Elemento1{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3 ;
+    background-color: rgb(238, 68, 51);
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+
+#Elemento2{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: rgb(140, 190, 139);
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+
+#Elemento2 .Cuadrado{
+    background-color: rgb(238, 137, 31);
+    height: 55%;
+    aspect-ratio: 1 / 1; /* Esto asegura que el ancho sea igual al alto, manteniendo la forma de cuadrado  */
+    border-radius: 3px;
+    transform: rotate(45deg);
+    margin-bottom: 12%; /* elevar el cuadrado hacia arriba */
+    box-shadow:  inset 0 0 0 15px rgb(31, 142, 137); /* Agrega un borde interno al cuadrado */
+}
+
+
+#Elemento3{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-color: rgb(140, 190, 139);
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+#Elemento4{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 25px rgb(237, 170, 53);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Elemento4 .Cuadrado{
+    background-color: rgb(239, 68, 51);
+    height: 50%;
+    width: 50%;
+    border-radius: 3px;
+}
+
+
+#Elemento5{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-color: rgb(138, 59, 80);
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    justify-self: center; /* Centra el círculo horizontalmente dentro de su celda en display:Grid */
+}
+
+
+#Elemento6{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    background-color: rgb(240, 137, 32);
+    height: 90%;
+    aspect-ratio: 1 / 1;
+    justify-self: center;
+    border-radius: 100%;
+}
+
+
+#Elemento7{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    height: 125%;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#Elemento7 #Rectangulo-Mayor{
+    background-color: rgb(240, 137, 32);
+    height: 35%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+#Elemento7 .Rectangulo-Menor{
+    background-color: rgb(228, 118, 15);
+    height: 15%;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+
+#Elemento7 .Rojo{
+    background-color: rgb(249, 111, 109);
+}
+
+
+
+
+#Elemento8{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 25px rgb(25, 147, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Elemento8 .Cuadrado{
+    background-color: rgb(25, 147, 151);
+    height: 45%;
+    width: 60%;
+    border-radius: 3px;
+}
+
+
+#Elemento9{
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    height: 120%;
+    width: 100%;
+    border-radius: 5px;
+    /* para hacerlo crecer hacia arriba */
+    margin-top: -14%;
+    box-shadow: inset 0 0 0 30px rgb(140, 190, 139);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Elemento9 .Cuadrado{
+    background-color: rgb(71, 154, 102);
+    height: 45%;
+    width: 45%;
+    border-radius: 3px;
+}
