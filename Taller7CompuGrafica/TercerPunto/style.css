@@ -1,0 +1,14 @@
+
+.carousel-item img {
+    filter: brightness(0.6)
+}
+
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.carousel {
+    border-radius: 15px;
+    overflow: hidden;
+}
