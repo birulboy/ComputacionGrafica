@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="600" height="400"></canvas>
+    <h3>Digite las coordenadas del siguiente punto</h3>
+    <div id="controls">
+        <div class="control">
+        <label for="x">X Coordenada(0-167):</label>
+        <input type="number" id="x" placeholder="X Coordinate" min="0" max="167">
+        </div>
+        <div class="control">
+        <label for="y">Y Coordenada(0-100):</label>
+        <input type="number" id="y" placeholder="Y Coordinate" min="0" max="100">
+        </div>
+    </div>
+    
+    <button id="Graficar" >Graficar</button>
+    <button id="Limpiar" >Limpiar</button>
+<script src="script.js"></script>    
+</body>
+</html>
